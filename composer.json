@@ -1,0 +1,8 @@
+{
+    "name": "jasonbutler42/pinterest-pin-it",
+    "version": "master",
+    "source": {
+        "url": "github.com/jasonbutler42/pinterest-pin-it.git",
+        "type": "git"
+    }
+}
