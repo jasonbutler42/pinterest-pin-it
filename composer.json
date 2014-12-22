@@ -1,8 +1,10 @@
 {
     "name": "jasonbutler42/pinterest-pin-it",
-    "version": "master",
-    "source": {
-        "url": "github.com/jasonbutler42/pinterest-pin-it.git",
-        "type": "git"
+    "description": "branch of some pinterest stuff",
+    "keywords": ["wordpress", "pinterest", "pin-it"],
+    "license": "GPL-3.0",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
     }
 }
