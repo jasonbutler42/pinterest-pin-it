@@ -38,10 +38,16 @@ The code is bellow:
    
 	background-repeat: none;
 	position: absolute;
-	top: 5px;
+	bottom: 1.5em;
+	right: 50%;
+	margin-right: -40px;
 	opacity: 0.7;
 	cursor: pointer;
-	display: none;
+}
+@media (min-width: 768px) {
+	.pibfi_pinterest .xc_pin {
+		display: none;	
+	}
 }
 
 /* =====================
@@ -62,7 +68,8 @@ The script grabs the "alignX" (default WordPress alignment values) value from ea
 */
 .pibfi_pinterest {
 	position: relative;
-	display: inline-block;
+	display: block;
+	margin:auto;
 }
 
 .pibfi_float_left {
@@ -93,19 +100,19 @@ The script grabs the "alignX" (default WordPress alignment values) value from ea
 .pibfi_pinterest:hover .xc_pin {display:block}
 
 .pibfi_pinterest:hover img {
-	-webkit-transition:opacity .7s ease-out; -
-	moz-transition:opacity .7s ease-out; 
-	transition:opacity .7s ease-out;
-	opacity: .7;
+	-webkit-transition:opacity .5s ease-out; -
+	moz-transition:opacity .5s ease-out; 
+	transition:opacity .5s ease-out;
+	opacity: 0.95;
 }
 
 .pibfi_pinterest img:hover + .xc_pin,
 .pibfi_pinterest_hover {
-	opacity: 0.7;
+	opacity: 0.95;
 }
 .pibfi_pinterest .xc_pin:hover {
 	opacity: 1;
-	-webkit-transition:opacity .7s ease-out; -
-	moz-transition:opacity .7s ease-out; 
-	transition:opacity .7s ease-out;
+	-webkit-transition:opacity .5s ease-out; -
+	moz-transition:opacity .5s ease-out; 
+	transition:opacity .5s ease-out;
 }

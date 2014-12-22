@@ -58,6 +58,10 @@ function pibfi_engine( $content ) {
 	$post_url = get_permalink(); //Get the post URL
 	$ppibfi_description = get_option( 'ppibfi_description' );
 	switch ($ppibfi_description) {
+		case "post_description":
+		$description = get_post_meta(get_the_ID(), '_aioseop_description', true) . " | " . get_the_title( $post->ID ) . " | " . get_bloginfo('url');
+		break;
+
 		case "post_title":
 		$description = get_the_title( $post->ID );
 		break;

@@ -71,6 +71,7 @@ function checkedAll () {var aa= document.getElementById('pinpages');checked = !c
 			<p><?=__( 'Select what will be sent as image description on pinned image', 'ppibfi_translate' ); ?> </p>
 			<p>
 			<select name="ppibfi_description" id="ppibfi_description">
+				<option value="post_description" <?php if ( 'post_description' == $ppibfi_description ) echo 'selected'; ?>><?=__( 'SEO Description','ppibfi_translate' ); ?></option>
 				<option value="post_title" <?php if ( 'post_title' == $ppibfi_description ) echo 'selected'; ?>><?=__( 'Post title','ppibfi_translate' ); ?></option>
 				<option value="post_title_link" <?php if ( 'post_title_link' == $ppibfi_description ) echo 'selected'; ?>><?=__( 'Post title | post link','ppibfi_translate' ); ?></option>
 				<option value="post_link" <?php if ( 'post_link' == $ppibfi_description ) echo 'selected'; ?>><?=__( 'Post link','ppibfi_translate' ); ?></option>
